@@ -7,7 +7,13 @@
 body{
         background: rgb(15, 15, 15);
       }
-      
+#myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
       .socket{
         width: 200px;
         height: 200px;
@@ -378,7 +384,7 @@ body{
       }
     </style>
 </head>
-<body>
+<body >
     <div class="socket">
       <div class="gel center-gel">
         <div class="hex-brick h1"></div>
@@ -569,5 +575,9 @@ body{
       </div>
       
     </div>
+    <video autoplay muted loop id="myVideo">
+    <source src="vid.mp4" type="video/mp4">
+  </video>
+  
   </body>
 </html>
